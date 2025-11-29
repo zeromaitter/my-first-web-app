@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ 
+ <!-- header -->
+   
+ <header class="header-container">
+     <img  src="images/header-logo.png" alt="logo" class="header-logo-image"> <!-- AI生成によるロゴ画像を使用 -->
+    <nav class="header-menu">
+        <ul class="menu-list">
+            <li><a class="menu-link"href="#">Home</a></li>
+            <li><a class="menu-link" href="#">About</a></li>
+            <li><a class="menu-link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+ </header>
+
+ <!-- section -->
+
+ <section class="section">
+    <video class="section-video" autoplay muted loop preload="auto">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <h1 class="section-title">Hello World!</h1>
+ </section>
+
+ <!-- figure -->
+
+ <figure class="figure-container">
+    <div class="figure-title">
+        <h2 class="figure-title-text">Greeting!</h2>
+    </div>
+    <section class="figure-about-container">
+        <img class="figure-image" src="images/animal.jpg" alt="figure-image">
+    <figcaption class="figure-text">
+        初めまして。<br>
+        2025.11.4 から本格的にプログラミングの勉強を始めました。<br>
+        現在はjavascriptを学んでいます。
+        <br>
+        <br>
+        この成果物はまだ見た目だけのデザインしか施していませんが、<br>
+        学習が進み次第、バックエンド連携やメディアクエリの実装も<br>
+        進めていきます。
+    </figcaption>
+    </section>
+ </figure>
+
+
+ <!-- feature -->
+
+ <section class="profile-container">
+    <div class="profile-title">
+        <h2 class="profile-title-text">About me</h2>
+    </div>
+    <div class="profile-menu">
+        <ul class="profile-list">
+            <li class="profile-item">
+                <img  src="images/icon1.png" alt="feature-image">
+                <p>クリエイティブなことが大好きな人間です。料理や執筆活動など、何かを創造することにおいて探求心を惜しまない性格です。</p>
+            </li>
+            <li class="profile-item">
+                <img  src="images/icon2.png" alt="feature-image">
+                <p>猫が好きで、一緒に暮らしています。猫は人間より偉いと本気で考えています。</p>
+            </li>
+            <li class="profile-item">
+                <img  src="images/icon3.png" alt="feature-image">
+                <p>ゲームもほどほどに嗜みます。10年間、Fainal Fantasy XIV をプレイし続けています。</p>
+            </li>
+        </ul>
+    </div>
+ </section>
+
+ <!-- footer -->
+
+ <footer class="footer-container">    
+    <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.825278610223!2d139.76449087625824!3d35.681303929969104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1764386785225!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer-map-info">
+        <h2>TOKYO STATION</h2>
+        <p>〒100-0005 東京都千代田区丸の内１丁目９</p>
+    </div>
+<div class="footer-section social"> 
+    <div class="social-links">
+        <a href="https://x.com/elonmusk?s=20" class="social-card X-icon" target="_blank">
+            <span class="card-text">X (Twitter)</span>
+            <i class="fa-brands fa-x-twitter"></i>
+            <span class="card-arrow">></span>
+        </a>
+
+        <a href="https://www.facebook.com/zuck/?locale=km_KH" class="social-card facebook-icon" target="_blank">
+            <span class="card-text">Facebook</span>
+            <i class="fa-brands fa-facebook"></i>
+            <span class="card-arrow">></span>
+        </a>
+        
+        <a href="https://www.instagram.com/cristiano?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-card instagram-icon" target="_blank"> 
+            <span class="card-text">Instagram</span>
+            <i class="fa-brands fa-instagram"></i>
+            <span class="card-arrow">></span>
+        </a>
+    </div> 
+</div> 
+ </footer>
+    <script src="script.js"></script>
+</body>
+</html>
