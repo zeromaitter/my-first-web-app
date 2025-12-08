@@ -17,15 +17,18 @@
  <!-- header -->
    
  <header class="header-container">
-     <img  src="images/header-logo.png" alt="logo" class="header-logo-image"> <!-- AI生成によるロゴ画像を使用 -->
-    <nav class="header-menu">
-        <ul class="menu-list">
+    <img src="images/header-logo.png" alt="logo" class="header-logo-image">
+    
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i> </button>
+
+    <nav class="header-menu" id="header-menu"> <ul class="menu-list">
             <li><a class="menu-link"href="#">Home</a></li>
             <li><a class="menu-link" href="#">About</a></li>
             <li><a class="menu-link" href="#">Contact</a></li>
         </ul>
     </nav>
- </header>
+</header>
 
  <!-- section -->
 
@@ -44,16 +47,16 @@
     </div>
     <section class="figure-about-container">
         <img class="figure-image" src="images/animal.jpg" alt="figure-image">
-    <figcaption class="figure-text">
+        <figcaption class="figure-text">
         初めまして。<br>
-        2025.11.4 から本格的にプログラミングの勉強を始めました。<br>
-        現在はjavascriptを学んでいます。
+        2025.11.4 から本格的にプログラミングの勉強を始めました。現在はjavascriptを学んでいます。
         <br>
         <br>
-        この成果物はまだ見た目だけのデザインしか施していませんが、<br>
-        学習が進み次第、バックエンド連携やメディアクエリの実装も<br>
-        進めていきます。
-    </figcaption>
+        この成果物はまだ見た目とメディアクエリのデザインしか施していませんが、学習が進み次第、バックエンド連携等の実装も進めていきます。
+        <br>
+        <br>
+        ちなみに作り終わった後にモバイルファーストという概念を知り、CSSを書き直すハメになりました。
+        </figcaption>
     </section>
  </figure>
 
@@ -68,7 +71,7 @@
         <ul class="profile-list">
             <li class="profile-item">
                 <img  src="images/icon1.png" alt="feature-image">
-                <p>クリエイティブなことが大好きな人間です。料理や執筆活動など、何かを創造することにおいて探求心を惜しまない性格です。</p>
+                <p>クリエイティブなことが好きな人間です。料理や執筆活動など、創造することにおいて探求心を惜しまない性格です。</p>
             </li>
             <li class="profile-item">
                 <img  src="images/icon2.png" alt="feature-image">
@@ -76,7 +79,7 @@
             </li>
             <li class="profile-item">
                 <img  src="images/icon3.png" alt="feature-image">
-                <p>ゲームもほどほどに嗜みます。10年間、Fainal Fantasy XIV をプレイし続けています。</p>
+                <p>ゲームもほどほどに嗜みます。10年間、Final Fantasy XIV をプレイし続けています。</p>
             </li>
         </ul>
     </div>
@@ -84,34 +87,32 @@
 
  <!-- footer -->
 
- <footer class="footer-container">    
-    <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.825278610223!2d139.76449087625824!3d35.681303929969104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1764386785225!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="footer-map-info">
-        <h2>TOKYO STATION</h2>
-        <p>〒100-0005 東京都千代田区丸の内１丁目９</p>
-    </div>
-<div class="footer-section social"> 
-    <div class="social-links">
-        <a href="https://x.com/elonmusk?s=20" class="social-card X-icon" target="_blank">
-            <span class="card-text">X (Twitter)</span>
-            <i class="fa-brands fa-x-twitter"></i>
-            <span class="card-arrow">></span>
-        </a>
+ <footer class="footer-container">
+    <div class="footer-content"> <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.76493611525882!3d35.68123618019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1630000000000!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        <a href="https://www.facebook.com/zuck/?locale=km_KH" class="social-card facebook-icon" target="_blank">
-            <span class="card-text">Facebook</span>
-            <i class="fa-brands fa-facebook"></i>
-            <span class="card-arrow">></span>
-        </a>
-        
-        <a href="https://www.instagram.com/cristiano?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-card instagram-icon" target="_blank"> 
-            <span class="card-text">Instagram</span>
-            <i class="fa-brands fa-instagram"></i>
-            <span class="card-arrow">></span>
-        </a>
-    </div> 
-</div> 
- </footer>
+        <div class="footer-map-info">
+            <h2>TOKYO STATION</h2>
+            <p>〒100-0005<br>東京都千代田区<br>丸の内１丁目９</p>
+        </div>
+
+        <div class="footer-section social"> 
+            <div class="social-links">
+                <a href="#" class="social-card X-icon" target="_blank">
+                    <span class="card-text">X (Twitter)</span>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="social-card facebook-icon" target="_blank">
+                    <span class="card-text">Facebook</span>
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social-card instagram-icon" target="_blank"> 
+                    <span class="card-text">Instagram</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div> 
+        </div> 
+    </div>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
